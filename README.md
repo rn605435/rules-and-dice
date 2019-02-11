@@ -2,13 +2,13 @@
 
 ## Membres du groupe   
 Alexi Gauchon  
-Maine Bensassï nour  
+Maïne Bensassi nour  
 Nicolas Rochette  
 
 ## Description de l'application (version démo)  
-L'application a pour but d'être une boîte à outils pour les jeux de dès.  
-Plusieurs paramètres seront disponibles comme le nombre de dès pouvant être lancé, les régles des jeux, le calcul de points, le nombre de lancés etc...  
-l'application web sera développée en prenant en compte l'adaptation mobile  
+L'application a pour but d'être une boîte à outils pour les jeux de dés.  
+Plusieurs paramètres seront disponibles comme le nombre de dés pouvant être lancé, les règles des jeux, le calcul de points, le nombre de lancés etc...  
+L'application web sera développée en prenant en compte l'adaptation mobile .
 
 
 ## Description de l'application (version complète)  
