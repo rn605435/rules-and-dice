@@ -16,4 +16,4 @@ Le but de la version complète est de pouvoir proposer encore plus de fonctionna
 
 
 ## Choix technologique  
-L'application sera développée dans un langage (HTML, CSS, Javascript), la bibliothèque jquery sera également utilisée.
+L'application sera développée dans un langage web (HTML, CSS, Javascript), la bibliothèque jquery sera également utilisée.
