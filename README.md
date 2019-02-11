@@ -7,7 +7,7 @@ Nicolas Rochette
 
 ## Description de l'application (version démo)  
 L'application a pour but d'être une boîte à outils pour les jeux de dès.  
-Plusieurs paramètres seront disponibles comme le nombre de dès pouvant être lancé, les régles des jeu, le calcul de points, le nombre de lancés etc...  
+Plusieurs paramètres seront disponibles comme le nombre de dès pouvant être lancé, les régles des jeux, le calcul de points, le nombre de lancés etc...  
 La version mobile du site web sera soignée afin de pouvoir utiliser l'application sur son téléphone.  
 
 
