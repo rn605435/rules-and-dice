@@ -8,7 +8,7 @@ Nicolas Rochette
 ## Description de l'application (version démo)  
 L'application a pour but d'être une boîte à outils pour les jeux de dès.  
 Plusieurs paramètres seront disponibles comme le nombre de dès pouvant être lancé, les régles des jeux, le calcul de points, le nombre de lancés etc...  
-La version mobile du site web sera soignée afin de pouvoir utiliser l'application sur son téléphone.  
+l'application web sera dévellopé en mobile-first.  
 
 
 ## Description de l'application (version complète)  
@@ -16,4 +16,4 @@ Le but de la version complète est de pouvoir proposer encore plus de fonctionna
 
 
 ## Choix technologique  
-L'application sera développée sur le web en utilisant les langages adaptés (HTML, CSS, Javascript), la bibliothèque jquery sera également utilisée.
+L'application sera développée dans un langage (HTML, CSS, Javascript), la bibliothèque jquery sera également utilisée.
