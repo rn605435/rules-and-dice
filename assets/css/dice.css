@@ -1,0 +1,156 @@
+body { font-family: sans-serif; }
+body * { box-sizing: border-box; }
+
+.posts article.fullwidth {
+  width: calc(100% - 6em);
+}
+.box { 
+  border: outset 2px #f56a6a; 
+  margin: 10px; 
+}
+.flex { 
+  display: flex; justify-content: space-between; 
+  max-width: 880px; 
+  margin: 20px 0;
+}
+.flex > .box { width: 50%; }
+.controls { margin: 10px 20px; width: 300px; }
+.controls button { 
+  display: block; 
+  margin-top: 10px; 
+}
+
+.game { 
+  border-radius: 10px; 
+  padding-left: 30px; 
+  background: linear-gradient(to bottom, rgba(250,250,250, 0.8), rgba(200,200,200, 0.8)); 
+  box-shadow: 4px 4px 8px 0 rgba(145,145,145,0.5);
+}
+
+.box-left {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.box-right {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+article.fullwidth table th {text-align: center; font-size: 1.1em;}
+article.fullwidth table tbody tr {
+  height: 50px;
+}
+article.fullwidth table td {vertical-align: middle;}
+
+button.disabled { color: #808080; }
+article.fullwidth button {
+  height: 3em;
+  line-height: 3em;
+  padding: 0 1.55em;
+  box-shadow: inset 0 0 0 1px #f56a6a;
+}
+
+.dice { 
+  background: #f0f0f0; 
+  border: solid 2px #c0c0c0; border-radius: 4px; 
+  display: inline-block; vertical-align: top; 
+  width: 50px; height: 50px; 
+  margin: 20px 10px; 
+  position: relative; 
+  overflow: hidden; 
+  text-indent: -1000px; 
+  box-shadow: 2px 2px 6px 0 rgba(45,45,45, 0.65);
+}
+
+.dice::before { 
+  content: "0"; 
+  position: absolute; 
+  top: 22px; left: 22px; 
+  background: transparent; 
+  height: 6px; width: 6px; 
+  border-radius: 50%; 
+}
+
+.dice-1::before { 
+  content: "1"; 
+  position: absolute; 
+  top: 22px; left: 22px; 
+  background: #000; 
+}
+
+.dice-2::before { 
+  content: "2"; 
+  box-shadow: 12px 12px 0 0 #000, -12px -12px 0 0 #000; 
+  background: transparent; 
+}
+
+.dice-3::before { 
+  content: "3";
+  box-shadow: -12px 12px 0 0 #000, 12px -12px 0 0 #000; 
+  background: #000; 
+}
+
+.dice-4::before { 
+  content: "4";
+  box-shadow: 12px 12px 0 0 #000, -12px -12px 0 0 #000, -12px 12px 0 0 #000, 12px -12px 0 0 #000; 
+  background: transparent; 
+}
+
+.dice-5::before { 
+  content: "5";
+  box-shadow: 12px 12px 0 0 #000, -12px -12px 0 0 #000, -12px 12px 0 0 #000, 12px -12px 0 0 #000; 
+  background: #000; 
+}
+
+.dice-6::before { 
+  content: "6";
+  box-shadow: 12px 12px 0 0 #000, -12px -12px 0 0 #000, -12px 12px 0 0 #000, 12px -12px 0 0 #000, 12px 0 0 0 #000, -12px 0 0 0 #000; 
+  background: transparent; 
+}
+
+.score,
+.calculated { 
+  width: 80px; 
+  text-align: center; 
+  background: #e6e6e6; 
+  border: solid 1px #808080; 
+  height: 1.4em; 
+  line-height: 1;
+  padding: 5px 0; 
+  display: inline-block; vertical-align: bottom; 
+}
+.score {background: #fff;}
+
+.note { font-size: 0.8rem; }
+.scores td { text-align: center; padding: 0 4px; color: #3d4449; }
+
+.dice.hold { box-shadow: 0 0 2px 2px #f56a6a }
+.empty { border-color: #434749; }
+.isHidden { display: none; }
+.gameOver { font-size: 32px; color: #3d4449; font-weight: bold; text-align: center;}
+
+@media screen and (max-width: 768px) {
+  .posts article.fullwidth {
+    width: calc(100% - 6em);
+  }
+  .flex {
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  .flex > .box {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .posts article.fullwidth {
+    width: 100%;
+  }
+  article.fullwidth button {padding: 0 0.55em;}
+  .score, .calculated {width: 65px;}
+}
+@media screen and (max-width: 480px){
+  .score, .calculated {
+      width: 55px;
+  }
+}

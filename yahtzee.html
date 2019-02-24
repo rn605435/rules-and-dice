@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Yahtzee - Rules and Dice</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/dice.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+                                    <a href="index.html" class="logo"><img src="images/dicelogo.png" alt="logo"></a>
+                                    <ul class="icons">
+                                        <li><a target="_blank" href="https://github.com/rn605435/rules-and-dice" class="icon fa-github"><span class="label">Github</span></a></li>
+                                    </ul>
+								</header>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Yahtzee</h2>
+									</header>
+									<div class="posts">
+                                        <article class="fullwidth">
+                                        <button id="resetGame">Reset</button>
+                                        <div class="gameOver isHidden">
+                                            Fin de la partie !
+                                        </div>                                       
+                                        <div class="box flex game">
+                                            <div tabindex="1" class="dice"></div>
+                                            <div tabindex="1" class="dice"></div>
+                                            <div tabindex="1" class="dice"></div>
+                                            <div tabindex="1" class="dice"></div>
+                                            <div tabindex="1" class="dice"></div>
+                                            <div class="controls">
+                                            Rolls Remaining
+                                            <div class="score rolls"></div>
+                                            <button id="rollDice">Roll Dice</button>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="box box-left">
+                                            <table class="scores">
+                                                <tr>
+                                                <th colspan="4">Many of a Kind</th>
+                                                </tr>
+                                                <tr>
+                                                <td colspan="2"><em>score</em></td>
+                                                <td colspan="2"><em>Current Roll</em></td>
+                                                </tr>
+                                                <tr>
+                                                <td># of Ones</td>
+                                                <td><div class="score ones"></div></td>
+                                                <td><button id="onesSelect">Select</button></td>
+                                                <td><div class="calculated onesRoll"></div></td>
+                                                </tr>
+                                                <tr>
+                                                <td># of Twos</td>
+                                                <td><div class="score twos"></div></td>
+                                                <td><button id="twosSelect">Select</button></td>
+                                                <td><div class="calculated twosRoll"></div></td>
+                                                </tr>
+                                                <tr>
+                                                <td># of Threes</td>
+                                                <td><div class="score threes"></div></td>
+                                                <td><button id="threesSelect">Select</button></td>
+                                                <td><div class="calculated threesRoll"></div></td>
+                                                </tr>
+                                                <tr>
+                                                <td># of Fours</td>
+                                                <td><div class="score fours"></div></td>
+                                                <td><button id="foursSelect">Select</button></td>
+                                                <td><div class="calculated foursRoll"></div></td>
+                                                </tr>
+                                                <tr>
+                                                <td># of Fives</td>
+                                                <td><div class="score fives"></div></td>
+                                                <td><button id="fivesSelect">Select</button></td>
+                                                <td><div class="calculated fivesRoll"></div></td>
+                                                </tr>
+                                                <tr>
+                                                <td># of Sixes</td>
+                                                <td><div class="score sixes"></div></td>
+                                                <td><button id="sixesSelect">Select</button></td>
+                                                <td><div class="calculated sixesRoll"></div></td>
+                                                </tr>
+                                                <tr>
+                                                <td>Bonus</td>
+                                                <td><div class="score bonusTotal"></div></td>
+                                                <td colspan="2" class="note">35 points if subtotal >= 63</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Left Total</td>
+                                                <td><div class="score leftTotal"></div></td>
+                                                <td></td>
+                                                <td></td>
+                                                </tr>
+                                            </table>
+                                            </div>
+                                            <div class="box box-right">
+                                            <table class="scores">
+                                                <tr>
+                                                <th colspan="4">Special Items</th>
+                                                </tr>
+                                                <tr>
+                                                <td colspan="2"><em>score</em></td>
+                                                <td colspan="2"><em>Current Roll</em></td>
+                                                </tr>
+                                                <tr>
+                                                <td>3 of a Kind</td>
+                                                <td><div class="score kind3"></div></td>
+                                                <td><button id="kind3Select">Select</button></td>
+                                                <td><div class="calculated kind3Roll"></div></td>
+                                                </tr>
+                                                <tr>
+                                                <td>4 of a Kind</td>
+                                                <td><div class="score kind4"></div></td>
+                                                <td><button id="kind4Select">Select</button></td>
+                                                <td><div class="calculated kind4Roll"></div></td>
+                                                </tr>
+                                                <tr>
+                                                <td>Full House</td>
+                                                <td><div class="score fHouse"></div></td>
+                                                <td><button id="fHouseSelect">Select</button></td>
+                                                <td><div class="calculated fHouseRoll"></div></td>
+                                                </tr>
+                                                <tr>
+                                                <td>Small Straight</td>
+                                                <td><div class="score sStraight"></div></td>
+                                                <td><button id="sStraightSelect">Select</button></td>
+                                                <td><div class="calculated sStraightRoll"></div></td>
+                                                </tr>
+                                                <tr>
+                                                <td>Large Straight</td>
+                                                <td><div class="score lStraight"></div></td>
+                                                <td><button id="lStraightSelect">Select</button></td>
+                                                <td><div class="calculated lStraightRoll"></div></td>
+                                                </tr>
+                                                <tr>
+                                                <td>Yahtzee</td>
+                                                <td><div class="score yahtzee"></div></td>
+                                                <td><button id="yahtzeeSelect">Select</button></td>
+                                                <td><div class="calculated yahtzeeRoll"></div></td>
+                                                </tr>
+                                                <tr>
+                                                <td>Yahtzee Bonus</td>
+                                                <td><div class="score yahtzeeB"></div></td>
+                                                <td><button id="yahtzeeBSelect">Select</button></td>
+                                                <td><div class="calculated yahtzeeBRoll"></div></td>
+                                                </tr>
+                                                <tr>
+                                                <td>Chance</td>
+                                                <td><div class="score chance"></div></td>
+                                                <td><button id="chanceSelect">Select</button></td>
+                                                <td><div class="calculated chanceRoll"></div></td>
+                                                </tr>
+                                                <tr>
+                                                <td>Right Total</td>
+                                                <td><div class="score rightTotal"></div></td>
+                                                <td></td>
+                                                <td></td>
+                                                </tr>
+                                                <tr>
+                                                <td>Grand Total</td>
+                                                <td><div class="score grandTotal"></div></td>
+                                                <td></td>
+                                                </tr>
+                                            </table>    
+                                            </div>
+                                                <td></td>
+                                        </div>
+                                        
+                                        <h2>Rules</h2>
+                                        <p>
+                                        To Play the Game<br />
+                                        The game consists of a series of rounds. In each round, you roll the dice and then score the roll in one of 13 categories. You must score once in each category -- which means that towards the end of the game you may have to settle for scoring zero in some categories. <br />
+                                        <br />
+                                        
+                                        You have five dice which you can roll, represented by the die faces at the top of the page. To start, you roll all dice by clicking on the Roll Dice button. Click Stop Dice to stop the roll and see what you got. The table will update to show you how your current dice score in each available category. After you roll all dice, you can either score the current roll, or re-roll any or all of the five dice. <br />
+                                        <br />
+                                            
+                                        To hold a die, click the die or the checkbox underneath it. re-roll some of the dice, click on the toggle button underneath the die face you want to re-roll, and then click on the Roll Dice button. This will re-roll the dice, leaving theselected ones unchanged. <br />
+                                        <br />
+                                        
+                                        You can roll the dice a total of three times -- the initial roll (in which you must roll all the dice), plus two re-rolls of any or all dice. After rolling three times, you must score the roll. <br />
+                                        <br />
+                                            
+                                        Once you've scored the roll, you roll all the dice again and repeat the process. You continue until all 13 categories have been filled, at which time the game is over.
+                                        </p> 
+                                        </article>         
+                                        </div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="yahtzee.html">Yahtzee</a></li>
+										<li><a href="elements.html">Elements</a></li>
+										<li><a href="#">Etiam Dolore</a></li>
+										<li><a href="#">Adipiscing</a></li>
+									</ul>
+								</nav>					
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Rules and Dice. All rights reserved.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/dice.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
