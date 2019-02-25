@@ -2,8 +2,8 @@
     "name": "Rules and Dice",
     "short_name": "Rules and Dice",
     "display": "minimal-ui",
-    "start_url": ".",
-    "theme_color": "#673ab6",
+    "start_url": "/index.html",
+    "theme_color": "#111",
     "background_color": "#fff",
     "icons": [
       {
