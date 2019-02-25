@@ -39,7 +39,7 @@
 										</header>
 										<p>L'application a pour but d'être une boîte à outils pour les jeux de dés, mais pas seulement, vous pouvez également jouer en solo à certains jeux (ex: <a href="yahtzee.html">le yahtzee</a>).</p>
 										<ul class="actions">
-											<li><a href="#" class="button big">Learn More</a></li>
+											<li><a id="#install" class="button big">Installer l'application</a></li>
 										</ul>
 									</div>
 									<span class="image object">
@@ -104,7 +104,8 @@
 				  deferredPrompt = e;
 				});
 			
-				// Installation must be done by a user gesture! Here, the button click
+				// Installation must be done by a user gesture! Here, the button 
+				var btnAdd = document.getElementById("install");
 				btnAdd.addEventListener('click', (e) => {
 				  // hide our user interface that shows our A2HS button
 				  btnAdd.style.display = 'none';
