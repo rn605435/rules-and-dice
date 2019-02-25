@@ -17,3 +17,9 @@ Le but de la version complète est de pouvoir proposer encore plus de fonctionna
 
 ## Choix technologique  
 L'application sera développée sur le web avec les langages (HTML, CSS, Javascript), la bibliothèque jquery sera également utilisée.
+Pourquoi utiliser jQuery ?  
+Nous n'avions pas besoin de surcharger le site avec des frameworks ou des bibliothèque tels que react ou angular  
+La facilité d'utilisation de cette bibliothèque nous permettra d'avancer plus rapidement  
+jQuery est compatible avec plus de navigateurs que d'autres solutions précedemment cité  
+Globalement jQuery est plus adéquat avec notre projet
+ 
