@@ -1,7 +1,7 @@
 {
     "name": "Rules and Dice",
     "short_name": "Rules and Dice",
-    "display": "minimal-ui",
+    "display": "standalone",
     "start_url": ".",
     "theme_color": "#111",
     "background_color": "#fff",
