@@ -14,10 +14,10 @@ self.addEventListener('install', function(e) {
         // 'assets/js/jquery.min.js',
         // 'assets/js/main.js',
         // 'assets/js/util.js',
-        // 'assets/js/dice.js',
+        'assets/js/dice.js',
         // 'assets/js/util.js',
-        // 'assets/css/dice.css',
-        // 'assets/css/main.css'
+        'assets/css/dice.css',
+        'assets/css/main.css'
       ]);
     })
   );
