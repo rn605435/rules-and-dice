@@ -16,16 +16,7 @@ self.addEventListener('install', function(e) {
         'assets/js/dice.js',
         'assets/js/util.js',
         'assets/css/dice.css',
-        'assets/css/main.css',
-        'assets/css/font-awesome.min.css',
-        'assets/fonts/fontawesome-webfont.eot',
-        'assets/fonts/fontawesome-webfont.svg',
-        'assets/fonts/fontawesome-webfont.ttf',
-        'assets/fonts/fontawesome-webfont.woff',
-        'assets/fonts/fontawesome-webfont.woff2',
-        'assets/fonts/FontAwesome.otf',
-        'images/dicelogo.png',
-        'images/yahtzee.JPG'
+        'assets/css/main.css'
       ]);
     })
   );
@@ -33,4 +24,9 @@ self.addEventListener('install', function(e) {
 
 self.addEventListener('fetch', function(event) {
   console.log(event.request.url);
+  event.respondWith(
+    caches.match(event.request).then(function(response) {
+      return response || fetch(event.request);
+    })
+  );
  });
