@@ -33,18 +33,5 @@ self.addEventListener('install', function(e) {
 });
 
 self.addEventListener('fetch', function(event) {
-  if (event.request.url == 'https://rn605435.github.io/rules-and-dice/') {
-    console.info('responding to server fetch with Service Worker! ðŸ¤“');
-    event.respondWith(fetch(event.request).catch(function(e) {
-      let out = {Gold: 1, Size: -1, Actions: []};
-      return new Response(JSON.stringify(out));
-    }));
-    return;
-  }
-
-  event.respondWith(
-    caches.match(event.request).then(function(response) {
-      return response || fetch(event.request);
-    })
-  );
+    console.info(event.request.url);
 });
