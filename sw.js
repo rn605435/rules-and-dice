@@ -25,7 +25,7 @@ self.addEventListener('install', function(e) {
         'assets/fonts/fontawesome-webfont.woff2',
         'assets/fonts/FontAwesome.otf',
         'images/dicelogo.png',
-        'images/yahtzee.JPG',
+        'images/yahtzee.JPG'
       ]);
     })
   );
