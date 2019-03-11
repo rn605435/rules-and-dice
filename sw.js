@@ -4,19 +4,19 @@ self.addEventListener('install', function(e) {
       return cache.addAll([
         'index.html',
         'yahtzee.html',
-        'toolbox.html',
-        'manifest.json',
-        'app-icon-192.png',
-        'app-icon-512.png',
-        'assets/js/breakpoints.min.js',
-        'assets/js/browser.min.js',
-        'assets/js/jquery.min.js',
-        'assets/js/main.js',
-        'assets/js/util.js',
-        'assets/js/dice.js',
-        'assets/js/util.js',
-        'assets/css/dice.css',
-        'assets/css/main.css'
+        // 'toolbox.html',
+        // 'manifest.json',
+        // 'app-icon-192.png',
+        // 'app-icon-512.png',
+        // 'assets/js/breakpoints.min.js',
+        // 'assets/js/browser.min.js',
+        // 'assets/js/jquery.min.js',
+        // 'assets/js/main.js',
+        // 'assets/js/util.js',
+        // 'assets/js/dice.js',
+        // 'assets/js/util.js',
+        // 'assets/css/dice.css',
+        // 'assets/css/main.css'
       ]);
     })
   );
