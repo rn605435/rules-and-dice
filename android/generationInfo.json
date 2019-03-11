@@ -1,0 +1,10 @@
+{
+    "generationTool": "pwabuilder-api",
+    "generationToolVersion": "2.0.1-rc.0",
+    "platformId": "android",
+    "platformPackage": "pwabuilder-android",
+    "platformVersion": "2.0.0-rc.0",
+    "generatedFrom": "Website Wizard",
+    "generationDate": "2019-03-11 10:28:37 Z",
+    "generatedURL": "https://rn605435.github.io/rules-and-dice/manifest.json"
+}

@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Rules and Dice",
+    "scope": "/",
+    "display": "standalone",
+    "start_url": "https://rn605435.github.io/rules-and-dice/",
+    "short_name": "Rules and Dice",
+    "theme_color": "#111",
+    "icons": {
+        "16": "16x16.png",
+        "32": "32x32.png",
+        "64": "64x64.png",
+        "128": "128x128.png",
+        "256": "256x256.png",
+        "512": "512x512.png",
+        "1024": "1024x1024.png",
+        "512x512": "app-icon-512.png"
+    }
+}

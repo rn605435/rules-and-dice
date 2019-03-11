@@ -1,0 +1,10 @@
+{
+    "generationTool": "pwabuilder-api",
+    "generationToolVersion": "2.0.1-rc.0",
+    "platformId": "mac",
+    "platformPackage": "pwabuilder-macos",
+    "platformVersion": "0.3.0",
+    "generatedFrom": "Website Wizard",
+    "generationDate": "2019-03-11 08:57:49 Z",
+    "generatedURL": "https://rn605435.github.io/rules-and-dice/manifest.json"
+}

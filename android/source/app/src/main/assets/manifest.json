@@ -1,0 +1,20 @@
+{
+    "name": "Rules and Dice",
+    "short_name": "Rules and Dice",
+    "display": "standalone",
+    "start_url": "https://rn605435.github.io/rules-and-dice/",
+    "theme_color": "#111",
+    "background_color": "#fff",
+    "icons": [
+        {
+            "src": "app-icon-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "app-icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
