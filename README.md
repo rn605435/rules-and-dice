@@ -23,3 +23,4 @@ La facilité d'utilisation de cette bibliothèque nous permettra d'avancer plus 
 jQuery est compatible avec plus de navigateurs que d'autres solutions précedemment cité  
 Globalement jQuery est plus adéquat avec notre projet
  
+## User Story
