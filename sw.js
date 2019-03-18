@@ -5,6 +5,8 @@ self.addEventListener('install', function(e) {
         '.',
         'index.html',
         'yahtzee.html',
+        'indexfr.html',
+        'yahtzeefr.html',
         // 'toolbox.html',
         // 'manifest.json',
         // 'app-icon-192.png',
