@@ -41,9 +41,9 @@
 									</header>
 									<div class="posts">
                                         <article class="fullwidth">
-                                        <button id="resetGame">Reset</button>
+                                        <button id="resetGame">Réinitialiser</button>
                                         <div class="gameOver isHidden">
-                                            Game over!
+                                            Fin de la partie !
                                         </div>                                       
                                         <div class="box flex game">
                                             <div tabindex="1" class="dice"></div>
@@ -52,64 +52,64 @@
                                             <div tabindex="1" class="dice"></div>
                                             <div tabindex="1" class="dice"></div>
                                             <div class="controls">
-                                            Rolls Remaining
+                                            Lancers restants
                                             <div class="score rolls"></div>
-                                            <button id="rollDice">Roll Dice</button>
+                                            <button id="rollDice">Lancer les dés</button>
                                             </div>
                                         </div>
                                         <div class="flex">
                                             <div class="box box-left">
                                             <table class="scores">
                                                 <tr>
-                                                <th colspan="4">Many of a Kind</th>
+                                                <th colspan="4">Section 1</th>
                                                 </tr>
                                                 <tr>
                                                 <td colspan="2"><em>score</em></td>
-                                                <td colspan="2"><em>Current Roll</em></td>
+                                                <td colspan="2"><em>Score actuel</em></td>
                                                 </tr>
                                                 <tr>
-                                                <td># of Ones</td>
+                                                <td># de Un</td>
                                                 <td><div class="score ones"></div></td>
-                                                <td><button id="onesSelect">Select</button></td>
+                                                <td><button id="onesSelect">Choisir</button></td>
                                                 <td><div class="calculated onesRoll"></div></td>
                                                 </tr>
                                                 <tr>
-                                                <td># of Twos</td>
+                                                <td># de Deux</td>
                                                 <td><div class="score twos"></div></td>
-                                                <td><button id="twosSelect">Select</button></td>
+                                                <td><button id="twosSelect">Choisir</button></td>
                                                 <td><div class="calculated twosRoll"></div></td>
                                                 </tr>
                                                 <tr>
-                                                <td># of Threes</td>
+                                                <td># de Trois</td>
                                                 <td><div class="score threes"></div></td>
-                                                <td><button id="threesSelect">Select</button></td>
+                                                <td><button id="threesSelect">Choisir</button></td>
                                                 <td><div class="calculated threesRoll"></div></td>
                                                 </tr>
                                                 <tr>
-                                                <td># of Fours</td>
+                                                <td># de Quatre</td>
                                                 <td><div class="score fours"></div></td>
-                                                <td><button id="foursSelect">Select</button></td>
+                                                <td><button id="foursSelect">Choisir</button></td>
                                                 <td><div class="calculated foursRoll"></div></td>
                                                 </tr>
                                                 <tr>
-                                                <td># of Fives</td>
+                                                <td># de Cinq</td>
                                                 <td><div class="score fives"></div></td>
-                                                <td><button id="fivesSelect">Select</button></td>
+                                                <td><button id="fivesSelect">Choisir</button></td>
                                                 <td><div class="calculated fivesRoll"></div></td>
                                                 </tr>
                                                 <tr>
-                                                <td># of Sixes</td>
+                                                <td># de Six</td>
                                                 <td><div class="score sixes"></div></td>
-                                                <td><button id="sixesSelect">Select</button></td>
+                                                <td><button id="sixesSelect">Choisir</button></td>
                                                 <td><div class="calculated sixesRoll"></div></td>
                                                 </tr>
                                                 <tr>
                                                 <td>Bonus</td>
                                                 <td><div class="score bonusTotal"></div></td>
-                                                <td colspan="2" class="note">35 points if subtotal >= 63</td>
+                                                <td colspan="2" class="note">35 points si total >= 63</td>
                                                 </tr>
                                                 <tr>
-                                                <td>Left Total</td>
+                                                <td>Total section 1</td>
                                                 <td><div class="score leftTotal"></div></td>
                                                 <td></td>
                                                 <td></td>
@@ -119,68 +119,68 @@
                                             <div class="box box-right">
                                             <table class="scores">
                                                 <tr>
-                                                <th colspan="4">Special Items</th>
+                                                <th colspan="4">Section 2</th>
                                                 </tr>
                                                 <tr>
                                                 <td colspan="2"><em>score</em></td>
-                                                <td colspan="2"><em>Current Roll</em></td>
+                                                <td colspan="2"><em>Score actuel</em></td>
                                                 </tr>
                                                 <tr>
-                                                <td>3 of a Kind</td>
+                                                <td>3 dés identiques</td>
                                                 <td><div class="score kind3"></div></td>
-                                                <td><button id="kind3Select">Select</button></td>
+                                                <td><button id="kind3Select">Choisir</button></td>
                                                 <td><div class="calculated kind3Roll"></div></td>
                                                 </tr>
                                                 <tr>
-                                                <td>4 of a Kind</td>
+                                                <td>4 dés identiques</td>
                                                 <td><div class="score kind4"></div></td>
-                                                <td><button id="kind4Select">Select</button></td>
+                                                <td><button id="kind4Select">Choisir</button></td>
                                                 <td><div class="calculated kind4Roll"></div></td>
                                                 </tr>
                                                 <tr>
                                                 <td>Full House</td>
                                                 <td><div class="score fHouse"></div></td>
-                                                <td><button id="fHouseSelect">Select</button></td>
+                                                <td><button id="fHouseSelect">Choisir</button></td>
                                                 <td><div class="calculated fHouseRoll"></div></td>
                                                 </tr>
                                                 <tr>
-                                                <td>Small Straight</td>
+                                                <td>Petite suite</td>
                                                 <td><div class="score sStraight"></div></td>
-                                                <td><button id="sStraightSelect">Select</button></td>
+                                                <td><button id="sStraightSelect">Choisir</button></td>
                                                 <td><div class="calculated sStraightRoll"></div></td>
                                                 </tr>
                                                 <tr>
-                                                <td>Large Straight</td>
+                                                <td>Grande suite</td>
                                                 <td><div class="score lStraight"></div></td>
-                                                <td><button id="lStraightSelect">Select</button></td>
+                                                <td><button id="lStraightSelect">Choisir</button></td>
                                                 <td><div class="calculated lStraightRoll"></div></td>
                                                 </tr>
                                                 <tr>
                                                 <td>Yahtzee</td>
                                                 <td><div class="score yahtzee"></div></td>
-                                                <td><button id="yahtzeeSelect">Select</button></td>
+                                                <td><button id="yahtzeeSelect">Choisir</button></td>
                                                 <td><div class="calculated yahtzeeRoll"></div></td>
                                                 </tr>
                                                 <tr>
                                                 <td>Yahtzee Bonus</td>
                                                 <td><div class="score yahtzeeB"></div></td>
-                                                <td><button id="yahtzeeBSelect">Select</button></td>
+                                                <td><button id="yahtzeeBSelect">Choisir</button></td>
                                                 <td><div class="calculated yahtzeeBRoll"></div></td>
                                                 </tr>
                                                 <tr>
                                                 <td>Chance</td>
                                                 <td><div class="score chance"></div></td>
-                                                <td><button id="chanceSelect">Select</button></td>
+                                                <td><button id="chanceSelect">Choisir</button></td>
                                                 <td><div class="calculated chanceRoll"></div></td>
                                                 </tr>
                                                 <tr>
-                                                <td>Right Total</td>
+                                                <td>Total section 2</td>
                                                 <td><div class="score rightTotal"></div></td>
                                                 <td></td>
                                                 <td></td>
                                                 </tr>
                                                 <tr>
-                                                <td>Grand Total</td>
+                                                <td>Total final</td>
                                                 <td><div class="score grandTotal"></div></td>
                                                 <td></td>
                                                 </tr>
@@ -189,22 +189,23 @@
                                                 <td></td>
                                         </div>
                                         
-                                        <h2>Rules</h2>
+                                        <h2>Règles</h2>
                                         <p>
-                                        To Play the Game<br />
-                                        The game consists of a series of rounds. In each round, you roll the dice and then score the roll in one of 13 categories. You must score once in each category -- which means that towards the end of the game you may have to settle for scoring zero in some categories. <br />
+                                        Pour jouer au jeu :<br />
+                                        
+                                        Le jeu consiste en une série de tours. À chaque tour, vous lancez les dés, puis vous marquez le résultat dans l'une des 13 catégories. Vous devez marquer une fois dans chaque catégorie - ce qui signifie que vers la fin du jeu, vous devrez peut-être vous contenter de zéro dans certaines catégories.<br />
                                         <br />
                                         
-                                        You have five dice which you can roll, represented by the die faces at the top of the page. To start, you roll all dice by clicking on the Roll Dice button. Click Stop Dice to stop the roll and see what you got. The table will update to show you how your current dice score in each available category. After you roll all dice, you can either score the current roll, or re-roll any or all of the five dice. <br />
+                                       Vous avez cinq dés que vous pouvez lancer, représentés par les faces des dés en haut de la page. Pour commencer, vous lancez tous les dés en cliquant sur le bouton Lancer les dés et voir ce que vous avez obtenu. Le tableau se mettra à jour pour vous montrer votre score de dés actuel dans chaque catégorie disponible. Après avoir lancé tous les dés, vous pouvez soit marquer le lancer actuel, soit relancer tout ou une partie des cinq dés.<br />
                                         <br />
                                             
-                                        To hold a die, click the die or the checkbox underneath it. re-roll some of the dice, click on the toggle button underneath the die face you want to re-roll, and then click on the Roll Dice button. This will re-roll the dice, leaving theselected ones unchanged. <br />
+                                        Pour garder un dé, appuyez ou cliquez dessus puis cliquez sur le bouton Lancer dés pour changer les autres. Cela relancera les dés, en laissant ceux qui ont été choisis inchangés. <br />
                                         <br />
                                         
-                                        You can roll the dice a total of three times -- the initial roll (in which you must roll all the dice), plus two re-rolls of any or all dice. After rolling three times, you must score the roll. <br />
+                                        Vous pouvez lancer les dés trois fois au total - le jet initial (dans lequel vous devez lancer tous les dés), plus deux relances d'un ou de tous les dés. Après avoir lancé trois fois, vous devez marquer le score. <br />
                                         <br />
                                             
-                                        Once you've scored the roll, you roll all the dice again and repeat the process. You continue until all 13 categories have been filled, at which time the game is over.
+                                       Une fois que vous avez marqué le résultat, vous relancez tous les dés et répétez le processus. Vous continuez jusqu'à ce que toutes les 13 catégories soient remplies, moment auquel le jeu est terminé.
                                         </p> 
                                         </article>         
                                         </div>
@@ -223,19 +224,18 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="yahtzee.html">Yahtzee</a></li>
+										<li><a href="indexfr.html">Homepage</a></li>
+										<li><a href="yahtzeefr.html">Yahtzee</a></li>
 									</ul>
 								</nav>					
 
 							<!-- Footer -->
 								<footer id="footer">
-									<p class="copyright">&copy; Rules and Dice. All rights reserved.</p>
+									<p class="copyright">&copy; Rules and Dice. Tout droits réservés.</p>
 								</footer>
 
 						</div>
 					</div>
-
 			</div>
 
 		<!-- Scripts -->
