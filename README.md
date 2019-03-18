@@ -24,3 +24,4 @@ jQuery est compatible avec plus de navigateurs que d'autres solutions précedemm
 Globalement jQuery est plus adéquat avec notre projet
  
 ## User Story
+![alt text](https://github.com/rn605435/rules-and-dice/blob/master/images/US_RulesAndDices.jpeg)
